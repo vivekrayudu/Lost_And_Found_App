@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Permissions for internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/laf"
+        android:label="Lost and Found"
+        android:roundIcon="@drawable/laf"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Trial"
+        tools:targetApi="31">
+        <activity
+            android:name=".changepass"
+            android:exported="false"
+            android:label="@string/title_activity_changepass"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".userposts"
+            android:exported="false"
+            android:label="@string/title_activity_userposts"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".forgotpass"
+            android:exported="false"
+            android:label="@string/title_activity_forgotpass"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Found_Feed"
+            android:exported="false"
+            android:label="@string/title_activity_found_feed"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Lost_feed"
+            android:exported="false"
+            android:label="@string/title_activity_lost_feed"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".lostfeed"
+            android:exported="false"
+            android:label="@string/title_activity_lostfeed"
+            android:theme="@style/Theme.Trial.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".foundpost"
+            android:exported="false"
+            android:label="@string/title_activity_foundpost"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".lostpost"
+            android:exported="false"
+            android:label="@string/title_activity_lostpost"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Home_Screen"
+            android:exported="false"
+            android:label="@string/title_activity_home_screen"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".Sign_up"
+            android:exported="true"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.Trial">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Trial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+    </application>
+
+</manifest>
